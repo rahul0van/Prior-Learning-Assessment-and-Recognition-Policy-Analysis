@@ -38,7 +38,6 @@ The dummy data was  crated from a ChatGPT which include 3 dataset Students Lists
 
 ### Tools and Technologies
 - AWS Services: S3, Glue DataBrew
-- Programming: Python for data preprocessing (optional)
 - Data Formats: CSV and Parquet
 
 ---
@@ -46,6 +45,12 @@ The dummy data was  crated from a ChatGPT which include 3 dataset Students Lists
 ### Deliverables
 - A cleaned dataset analysis.
 - Outputs in user-readable (CSV) and system-efficient (Parquet) formats.
+
+  <img width="654" alt="image" src="https://github.com/user-attachments/assets/f44ac8a9-3c89-4610-91e7-9d9f2d403480" />
+
+
+  <img width="329" alt="image" src="https://github.com/user-attachments/assets/15990851-1abb-4d8b-9b5f-ca7550c4ce8c" />
+
 
 ---
 
