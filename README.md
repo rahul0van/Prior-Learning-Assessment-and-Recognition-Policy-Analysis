@@ -48,6 +48,57 @@ The dummy data was  crated from a ChatGPT which include 3 dataset Students Lists
 
   <img width="654" alt="image" src="https://github.com/user-attachments/assets/f44ac8a9-3c89-4610-91e7-9d9f2d403480" />
 
+# Data Quality Control 
+
+## Project Description
+Data quality control is a crucial step to ensure the dataset's accuracy, completeness, and reliability for analysis. In this project, the quality control process focused on validating the cleaned dataset for completeness, uniqueness, and sensitivity before proceeding to further analysis. The processed data was categorized into **Passed** and **Failed** categories, enabling structured workflows for analysis.
+
+### Project Title
+**Data Quality Prior Learning Assessment and Recognition Policy UCW Dataset**
+
+### Objective
+To ensure the dataset adheres to predefined quality standards, such as:
+1. Completeness of critical attributes.
+2. Uniqueness of records to avoid duplication.
+3. Identification of sensitive data for compliance and security.
+
+---
+
+## Methodology
+
+### 1. Data Profiling
+- Reviewed dataset to identify missing values, duplicates, and inconsistent formatting.
+
+### 2. Data Cleaning
+- Handled missing and invalid values during the earlier data cleaning phase.
+- Addressed:
+  - Special characters in `Name` and `Color`.
+  - Inconsistent formats for `Sex` and `Date`.
+
+### 3. Data Validation Rules
+- **Completeness**:
+  - Ensured all rows in `name`, `addresses`, and `cgpa` columns are filled.
+- **Uniqueness**:
+  - Verified that records are unique based on `student_id`.
+- **Sensitive Data Detection**:
+  - Checked for potential PII (e.g., addresses, personal identifiers) using AWS Glue's transformation rules.
+
+### 4. Segregation of Data
+- **Passed Data**: Records meeting quality criteria stored in the **Passed** folder.
+- **Failed Data**: Incomplete or inconsistent records flagged and stored in the **Failed** folder.
+
+### 5. Output
+- Cleaned and validated data stored in:
+  - **Passed**: `s3://ro-trf-rah/student_admission/data-quality/Passed/`
+  - **Failed**: `s3://ro-trf-rah/student_admission/data-quality/Failed/`
+
+---
+
+## Tools and Technologies
+- **AWS Glue**: Data quality transformation and sensitive data detection.
+- **AWS S3**: Storage for cleaned and validated datasets.
+- **File Formats**: Parquet for system use; CSV for end-user accessibility.
+
 
   <img width="329" alt="image" src="https://github.com/user-attachments/assets/15990851-1abb-4d8b-9b5f-ca7550c4ce8c" />
 
