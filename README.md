@@ -72,8 +72,8 @@ To ensure the dataset adheres to predefined quality standards, such as:
 ### 2. Data Cleaning
 - Handled missing and invalid values during the earlier data cleaning phase.
 - Addressed:
-  - Special characters in `Name` and `Color`.
-  - Inconsistent formats for `Sex` and `Date`.
+  - Special characters in `Name` and `Date`.
+  - Inconsistent formats for `Country` and `Date`.
 
 ### 3. Data Validation Rules
 - **Completeness**:
